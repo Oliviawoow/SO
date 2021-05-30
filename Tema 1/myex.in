@@ -1,0 +1,17 @@
+#define VAR0 1
+#define BBY 20
+#define COFFEEBABE NEBUNIE
+#define NEBUNIE 10
+
+int main() {
+    int y = VAR0 + 1;
+    int z = BBY + 2;
+    int x = 3 + NEBUNIE;
+    printf("%d\n", VAR0);
+
+    if (BABY == 20) {
+        printf("%d\n", COFFEEBABE);
+    }
+
+    return 0;
+}
