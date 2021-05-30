@@ -1,0 +1,23 @@
+Oprea Olivia 333CA
+
+Pentru inceput am furat din laboratorul 6 ex 5 ca sa imi fac functia de 
+so_init_loader si functia de segv_handler.
+
+In so_execute imi preiau file descriptorul fisierului si il deschis. De
+asemenea imi declar intreg vectorul de date cu 0 pentru a imi usura 
+verificarea maparii.
+
+In so_init_loader am handlerul default initializat.
+
+In segv_handler verific daca am acces la memorie nevalid. Daca da caut pagina
+prin segmentele executabilului. Daca gasesc pagina si nu este mapata, o mapez.
+Daca este in zona nespecificata o mapez anonim, altfel o mapez din fisier.
+Daca pagina este mapata sau nu o gasesc in niciun segment apelez handlerul 
+default.
+
+Tema asa a avut mai multa legatura cu SO-ul si cu ce s-a facut la laborator.
+Implementarea mea este naiva. Se putea mai bine. Imi lipseste umplerea cu 
+zerouri in caz de pagina nu se aflta in file_size din motive de erori :)
+
+Amm furat de asemenea din laboratorul 6 fisierul utils.h pentru a face
+debugging.
